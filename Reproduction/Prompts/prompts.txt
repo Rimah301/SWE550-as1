@@ -1,0 +1,57 @@
+MODEL-INDEPENDENT PROMPT TEMPLATES
+
+The experiment submits five separate, independent requests for each source
+function or method. Each request uses the same task template and source code,
+but is sent as a fresh request without prior conversation history or previous
+responses. Each individual response is asked to contain exactly five unit
+tests. The five responses are stored separately and then aggregated in Excel.
+
+============================================================
+1. PYTHON PROMPT — PYTEST
+============================================================
+
+This is one independent test-generation run. Generate exactly 5 independent unit tests for the given Python function using pytest.
+
+Requirements:
+- Use pytest only.
+- Test the function directly; do not rewrite or modify the original implementation.
+- Do not use unittest, unittest.mock, hypothesis, or any other testing framework.
+- Do not rely on external files, network access, databases, environment-specific state, or randomness.
+- Infer the function's intended behavior solely from the provided original code and its interface.
+- Cover normal/representative behavior, boundary conditions, invalid or unusual inputs when applicable, and important branch behavior.
+- Prefer tests that would detect realistic implementation mistakes rather than merely checking that the function is callable.
+- Each test must contain a clear assertion about the expected behavior.
+- Keep the tests independent and deterministic.
+- Do not use knowledge of hidden/reference implementations.
+- Do not refer to, continue, or reuse any previous generation. Treat this request as completely standalone.
+- Return only executable pytest test code, with no explanation or markdown fences.
+
+Original Python code:
+{original_code}
+
+
+============================================================
+2. JAVA PROMPT — JUNIT
+============================================================
+
+This is one independent test-generation run. Generate exactly 5 independent unit tests for the given Java method using JUnit.
+
+Requirements:
+- Use JUnit only.
+- Test the method directly; do not rewrite or modify the original implementation.
+- Do not use TestNG, Mockito, PowerMock, JMock, AssertJ, or any other testing framework.
+- Do not rely on external files, network access, databases, environment-specific state, or randomness.
+- Infer the method's intended behavior solely from the provided original Java code and its interface.
+- Cover normal/representative behavior, boundary conditions, invalid or unusual inputs when applicable, and important branch behavior.
+- Prefer tests that would detect realistic implementation mistakes rather than merely checking that the function is callable.
+- Each test must contain a clear assertion about the expected behavior.
+- Keep the tests independent and deterministic.
+- Do not use knowledge of hidden/reference implementations.
+- Use appropriate standard JUnit assertions.
+- Include all necessary JUnit imports.
+- Do not refer to, continue, or reuse any previous generation. Treat this request as completely standalone.
+- Return exactly 5 independent test methods.
+- Return only executable Java JUnit test code, with no explanation or markdown fences.
+
+Original Java code:
+{original_code}
