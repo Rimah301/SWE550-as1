@@ -1,5 +1,0 @@
-pandas
-openpyxl
-litellm
-python-dotenv
-pynguin
