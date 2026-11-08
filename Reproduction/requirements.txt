@@ -1,0 +1,7 @@
+pandas
+numpy
+scipy
+openpyxl
+litellm
+python-dotenv
+pynguin
