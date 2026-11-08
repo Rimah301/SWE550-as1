@@ -1,0 +1,576 @@
+{
+  "title": "Paper-aligned Python and Java execution and coverage dataset",
+  "paper": "Empirical Evaluation of Semantic Quality in LLM-Generated Unit Tests Using the SQAI Framework",
+  "reference": "Table IV, page 9; Gemini Java Hard supplementary paragraph on page 8/9",
+  "python_file": "Python_Execution_Coverage_Paper_Aligned.json",
+  "java_file": "Java_Execution_Coverage_Paper_Aligned.json",
+  "important_note": "Python pass rate and Java measurement rate are different execution indicators and must not be directly compared as if they were the same metric.",
+  "python": {
+    "dataset": "Paper-aligned execution and coverage results",
+    "language": "Python",
+    "paper_reference": {
+      "paper": "Empirical Evaluation of Semantic Quality in LLM-Generated Unit Tests Using the SQAI Framework",
+      "table": "Table IV(a)",
+      "page": 9
+    },
+    "metrics": {
+      "pass_rate_percent": "Paper-reported mean test pass rate for the generator/difficulty group; not a pooled count ratio.",
+      "line_coverage_percent": "Paper-reported mean line coverage among outputs with measurable coverage.",
+      "branch_coverage_percent": "Paper-reported mean branch coverage; null means source-coded N/A, not zero.",
+      "coverage_reports": "Number of coverage reports obtained; for Pynguin this is shown as reports out of 150 attempts.",
+      "attempted_test_units": "Number of evaluated test units recorded in the detailed evaluation workbook; retained as context, not substituted for coverage-report count."
+    },
+    "results": [
+      {
+        "model": "Claude Fable 5.1",
+        "difficulty": "Easy",
+        "execution": {
+          "pass_rate_percent": 100.0,
+          "attempted_test_units": 50,
+          "coverage_reports": 50,
+          "coverage_measurement_rate_percent": 100.0
+        },
+        "coverage": {
+          "line_coverage_percent": 50.2,
+          "branch_coverage_percent": null
+        }
+      },
+      {
+        "model": "Claude Fable 5.1",
+        "difficulty": "Medium",
+        "execution": {
+          "pass_rate_percent": 100.0,
+          "attempted_test_units": 50,
+          "coverage_reports": 50,
+          "coverage_measurement_rate_percent": 100.0
+        },
+        "coverage": {
+          "line_coverage_percent": 64.9,
+          "branch_coverage_percent": 100.0
+        }
+      },
+      {
+        "model": "Claude Fable 5.1",
+        "difficulty": "Hard",
+        "execution": {
+          "pass_rate_percent": 100.0,
+          "attempted_test_units": 50,
+          "coverage_reports": 50,
+          "coverage_measurement_rate_percent": 100.0
+        },
+        "coverage": {
+          "line_coverage_percent": 75.1,
+          "branch_coverage_percent": 66.8
+        }
+      },
+      {
+        "model": "DeepSeek-V4.1",
+        "difficulty": "Easy",
+        "execution": {
+          "pass_rate_percent": 86.0,
+          "attempted_test_units": 50,
+          "coverage_reports": 50,
+          "coverage_measurement_rate_percent": 100.0
+        },
+        "coverage": {
+          "line_coverage_percent": 81.2,
+          "branch_coverage_percent": 60.0
+        }
+      },
+      {
+        "model": "DeepSeek-V4.1",
+        "difficulty": "Medium",
+        "execution": {
+          "pass_rate_percent": 46.5,
+          "attempted_test_units": 50,
+          "coverage_reports": 43,
+          "coverage_measurement_rate_percent": 86.0
+        },
+        "coverage": {
+          "line_coverage_percent": 48.7,
+          "branch_coverage_percent": 34.2
+        }
+      },
+      {
+        "model": "DeepSeek-V4.1",
+        "difficulty": "Hard",
+        "execution": {
+          "pass_rate_percent": 55.6,
+          "attempted_test_units": 50,
+          "coverage_reports": 45,
+          "coverage_measurement_rate_percent": 90.0
+        },
+        "coverage": {
+          "line_coverage_percent": 36.4,
+          "branch_coverage_percent": 22.0
+        }
+      },
+      {
+        "model": "GPT-5.6",
+        "difficulty": "Easy",
+        "execution": {
+          "pass_rate_percent": 68.0,
+          "attempted_test_units": 50,
+          "coverage_reports": 50,
+          "coverage_measurement_rate_percent": 100.0
+        },
+        "coverage": {
+          "line_coverage_percent": 85.7,
+          "branch_coverage_percent": 75.0
+        }
+      },
+      {
+        "model": "GPT-5.6",
+        "difficulty": "Medium",
+        "execution": {
+          "pass_rate_percent": 39.1,
+          "attempted_test_units": 50,
+          "coverage_reports": 46,
+          "coverage_measurement_rate_percent": 92.0
+        },
+        "coverage": {
+          "line_coverage_percent": 69.3,
+          "branch_coverage_percent": 61.4
+        }
+      },
+      {
+        "model": "GPT-5.6",
+        "difficulty": "Hard",
+        "execution": {
+          "pass_rate_percent": 96.0,
+          "attempted_test_units": 50,
+          "coverage_reports": 50,
+          "coverage_measurement_rate_percent": 100.0
+        },
+        "coverage": {
+          "line_coverage_percent": 56.8,
+          "branch_coverage_percent": 41.1
+        }
+      },
+      {
+        "model": "Gemini 3.8",
+        "difficulty": "Easy",
+        "execution": {
+          "pass_rate_percent": 90.0,
+          "attempted_test_units": 50,
+          "coverage_reports": 50,
+          "coverage_measurement_rate_percent": 100.0
+        },
+        "coverage": {
+          "line_coverage_percent": 91.7,
+          "branch_coverage_percent": 100.0
+        }
+      },
+      {
+        "model": "Gemini 3.8",
+        "difficulty": "Medium",
+        "execution": {
+          "pass_rate_percent": 50.0,
+          "attempted_test_units": 50,
+          "coverage_reports": 46,
+          "coverage_measurement_rate_percent": 92.0
+        },
+        "coverage": {
+          "line_coverage_percent": 73.9,
+          "branch_coverage_percent": 68.5
+        }
+      },
+      {
+        "model": "Gemini 3.8",
+        "difficulty": "Hard",
+        "execution": {
+          "pass_rate_percent": 82.0,
+          "attempted_test_units": 50,
+          "coverage_reports": 50,
+          "coverage_measurement_rate_percent": 100.0
+        },
+        "coverage": {
+          "line_coverage_percent": 60.0,
+          "branch_coverage_percent": 44.6
+        }
+      },
+      {
+        "model": "Pynguin",
+        "difficulty": "Easy",
+        "execution": {
+          "pass_rate_percent": 91.0,
+          "attempted_test_units": 150,
+          "coverage_reports": 73,
+          "coverage_measurement_rate_percent": 48.67
+        },
+        "coverage": {
+          "line_coverage_percent": 93.3,
+          "branch_coverage_percent": 48.1
+        }
+      },
+      {
+        "model": "Pynguin",
+        "difficulty": "Medium",
+        "execution": {
+          "pass_rate_percent": 33.7,
+          "attempted_test_units": 150,
+          "coverage_reports": 80,
+          "coverage_measurement_rate_percent": 53.33
+        },
+        "coverage": {
+          "line_coverage_percent": 64.6,
+          "branch_coverage_percent": 60.9
+        }
+      },
+      {
+        "model": "Pynguin",
+        "difficulty": "Hard",
+        "execution": {
+          "pass_rate_percent": 79.8,
+          "attempted_test_units": 150,
+          "coverage_reports": 21,
+          "coverage_measurement_rate_percent": 14.0
+        },
+        "coverage": {
+          "line_coverage_percent": 10.8,
+          "branch_coverage_percent": 5.7
+        }
+      },
+      {
+        "model": "Qwen 3.8",
+        "difficulty": "Easy",
+        "execution": {
+          "pass_rate_percent": 18.9,
+          "attempted_test_units": 50,
+          "coverage_reports": 1,
+          "coverage_measurement_rate_percent": 2.0
+        },
+        "coverage": {
+          "line_coverage_percent": 33.3,
+          "branch_coverage_percent": 0.0
+        }
+      },
+      {
+        "model": "Qwen 3.8",
+        "difficulty": "Medium",
+        "execution": {
+          "pass_rate_percent": 15.6,
+          "attempted_test_units": 50,
+          "coverage_reports": 2,
+          "coverage_measurement_rate_percent": 4.0
+        },
+        "coverage": {
+          "line_coverage_percent": 33.1,
+          "branch_coverage_percent": 27.1
+        }
+      },
+      {
+        "model": "Qwen 3.8",
+        "difficulty": "Hard",
+        "execution": {
+          "pass_rate_percent": 5.0,
+          "attempted_test_units": 50,
+          "coverage_reports": 0,
+          "coverage_measurement_rate_percent": 0.0
+        },
+        "coverage": {
+          "line_coverage_percent": null,
+          "branch_coverage_percent": null
+        }
+      }
+    ],
+    "aggregation_policy": {
+      "overall_cross_difficulty_average": "Not supplied; do not calculate an unweighted mean across difficulty strata as a replacement for the paper's reported values.",
+      "na_policy": "Null/N/A is not zero. Qwen Hard has no coverage report and therefore line/branch coverage are N/A.",
+      "source_of_truth": "Values in Table IV(a) of the paper were prioritized when source workbooks contained inconsistent or differently aggregated fields."
+    },
+    "source_files_used": [
+      "python_unit test تقييم(6).xlsx — Model_Difficulty_Summary and supporting detail",
+      "Integrated_Language_Model_Testing_Summary_Detailed(7).xlsx — cross-check only where values matched the paper",
+      "Paper PDF — Table IV(a), page 9"
+    ],
+    "excluded_or_not_substituted": [
+      {
+        "file": "Recalculated_Coverage_Qwen_Audit(3).xlsx",
+        "reason": "Contains preliminary statement-line execution ratios (63.57%, 29.82%, 41.94%) that are not the paper's reported Coverage.py values. The paper-aligned Qwen values are 33.3%, 33.1%, and N/A."
+      }
+    ]
+  },
+  "java": {
+    "dataset": "Paper-aligned execution/measurement and coverage results",
+    "language": "Java",
+    "paper_reference": {
+      "paper": "Empirical Evaluation of Semantic Quality in LLM-Generated Unit Tests Using the SQAI Framework",
+      "table": "Table IV(b)",
+      "page": 9
+    },
+    "metrics": {
+      "line_coverage_percent": "Paper-reported mean line coverage over targets with valid coverage measurements.",
+      "measured_targets": "Number of target methods with coverage measurements.",
+      "target_denominator": "Number of target methods in the level; DeepSeek Hard uses the paper's supplied denominator of 8.",
+      "measurement_rate_percent": "Measured targets divided by target denominator × 100.",
+      "test_pass_rate": "Not generally reported in Table IV(b). Do not infer it from measurement rate. Gemini Hard has separately documented run statuses."
+    },
+    "results": [
+      {
+        "model": "Claude Fable 5.1",
+        "difficulty": "Easy",
+        "execution": {
+          "measured_targets": 9,
+          "target_denominator": 10,
+          "measurement_rate_percent": 90.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 76.2
+        }
+      },
+      {
+        "model": "Claude Fable 5.1",
+        "difficulty": "Medium",
+        "execution": {
+          "measured_targets": 10,
+          "target_denominator": 10,
+          "measurement_rate_percent": 100.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 74.6
+        }
+      },
+      {
+        "model": "Claude Fable 5.1",
+        "difficulty": "Hard",
+        "execution": {
+          "measured_targets": 10,
+          "target_denominator": 10,
+          "measurement_rate_percent": 100.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 73.8
+        }
+      },
+      {
+        "model": "DeepSeek-V4.1",
+        "difficulty": "Easy",
+        "execution": {
+          "measured_targets": 8,
+          "target_denominator": 10,
+          "measurement_rate_percent": 80.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 100.0
+        }
+      },
+      {
+        "model": "DeepSeek-V4.1",
+        "difficulty": "Medium",
+        "execution": {
+          "measured_targets": 9,
+          "target_denominator": 10,
+          "measurement_rate_percent": 90.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 72.5
+        }
+      },
+      {
+        "model": "DeepSeek-V4.1",
+        "difficulty": "Hard",
+        "execution": {
+          "measured_targets": 2,
+          "target_denominator": 8,
+          "measurement_rate_percent": 25.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 59.8
+        }
+      },
+      {
+        "model": "Gemini 3.8",
+        "difficulty": "Easy",
+        "execution": {
+          "measured_targets": 8,
+          "target_denominator": 10,
+          "measurement_rate_percent": 80.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 100.0
+        }
+      },
+      {
+        "model": "Gemini 3.8",
+        "difficulty": "Medium",
+        "execution": {
+          "measured_targets": 10,
+          "target_denominator": 10,
+          "measurement_rate_percent": 100.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 78.4
+        }
+      },
+      {
+        "model": "Gemini 3.8",
+        "difficulty": "Hard",
+        "execution": {
+          "measured_targets": 10,
+          "target_denominator": 10,
+          "measurement_rate_percent": 100.0,
+          "interpretation": "Measured-target yield, not test pass rate.",
+          "attempted_runs": 50,
+          "measured_runs": 50,
+          "measurement_rate_by_run_percent": 100.0,
+          "passed_runs": 30,
+          "test_failure_runs": 20,
+          "unavailable_runs": 0,
+          "test_pass_rate_percent": 60.0
+        },
+        "coverage": {
+          "line_coverage_percent": 26.48,
+          "branch_coverage_percent": 19.771423,
+          "combined_line_branch_coverage_percent": 23.250984
+        }
+      },
+      {
+        "model": "GPT-5.6",
+        "difficulty": "Easy",
+        "execution": {
+          "measured_targets": 9,
+          "target_denominator": 10,
+          "measurement_rate_percent": 90.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 76.2
+        }
+      },
+      {
+        "model": "GPT-5.6",
+        "difficulty": "Medium",
+        "execution": {
+          "measured_targets": 8,
+          "target_denominator": 10,
+          "measurement_rate_percent": 80.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 73.2
+        }
+      },
+      {
+        "model": "GPT-5.6",
+        "difficulty": "Hard",
+        "execution": {
+          "measured_targets": 6,
+          "target_denominator": 10,
+          "measurement_rate_percent": 60.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 54.4
+        }
+      },
+      {
+        "model": "Qwen 3.8",
+        "difficulty": "Easy",
+        "execution": {
+          "measured_targets": 1,
+          "target_denominator": 10,
+          "measurement_rate_percent": 10.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 100.0
+        }
+      },
+      {
+        "model": "Qwen 3.8",
+        "difficulty": "Medium",
+        "execution": {
+          "measured_targets": 2,
+          "target_denominator": 10,
+          "measurement_rate_percent": 20.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 81.4
+        }
+      },
+      {
+        "model": "Qwen 3.8",
+        "difficulty": "Hard",
+        "execution": {
+          "measured_targets": 2,
+          "target_denominator": 10,
+          "measurement_rate_percent": 20.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 64.3
+        }
+      },
+      {
+        "model": "EvoSuite",
+        "difficulty": "Easy",
+        "execution": {
+          "measured_targets": 4,
+          "target_denominator": 10,
+          "measurement_rate_percent": 40.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 52.6
+        }
+      },
+      {
+        "model": "EvoSuite",
+        "difficulty": "Medium",
+        "execution": {
+          "measured_targets": 6,
+          "target_denominator": 10,
+          "measurement_rate_percent": 60.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 60.3
+        }
+      },
+      {
+        "model": "EvoSuite",
+        "difficulty": "Hard",
+        "execution": {
+          "measured_targets": 1,
+          "target_denominator": 10,
+          "measurement_rate_percent": 10.0,
+          "interpretation": "Measured-target yield, not test pass rate."
+        },
+        "coverage": {
+          "line_coverage_percent": 9.5
+        }
+      }
+    ],
+    "aggregation_policy": {
+      "overall_cross_difficulty_average": "Not calculated; the paper reports difficulty-specific coverage and measurement rates.",
+      "na_policy": "A target without a valid coverage measurement is excluded from the conditional coverage mean and reflected in the measurement rate; it is not assigned zero.",
+      "gemini_hard": "The paper's updated source is Gemini_Java_Hard_Coverage_Results_Summary(6).xlsx / corresponding updated audit. It supersedes the older Java coverage summary entry that showed no measured Hard targets.",
+      "deepseek_hard": "The supplied denominator is 8, as explicitly noted in the paper."
+    },
+    "source_files_used": [
+      "coverge Java(20261108-091100).xlsx — cross-check for most generator/difficulty line-coverage and target-measurement values",
+      "Gemini_Java_Hard_Coverage_Results_Summary(6).xlsx — paper-aligned Gemini Hard replacement, located in the Library",
+      "Paper PDF — Table IV(b), page 9 and Gemini Hard execution paragraph"
+    ],
+    "excluded_or_not_substituted": [
+      {
+        "file": "Gemini_Java_Coverage_Report(4).xlsx",
+        "reason": "This workbook reports a different/incompatible Gemini Java dataset: its Hard section has only five target methods and zero measured methods, and its methodology describes custom probes rather than the paper's updated 10-target, 50-run JaCoCo-based result. It must not replace the paper-aligned Gemini Hard result."
+      },
+      {
+        "file": "Java without coverge and mution تقييم(5).xlsx",
+        "reason": "Contains test-generation/evaluation records but no usable execution/coverage measurements for Java; it is not used to invent Java pass rates."
+      }
+    ]
+  }
+}
