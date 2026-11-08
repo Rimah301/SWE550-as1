@@ -1,0 +1,78 @@
+SQAI PAPER REPRODUCTION AUDIT
+Coverage JSON: inputs/Execution_and_Coverage_Results.json
+Python SQAI workbook: inputs/Python_SQAI_Evaluations.xlsx
+Java SQAI workbook: inputs/Java_SQAI_Evaluations.xlsx
+
+Validation checks passed: 56/56
+
+CHECK DETAILS:
+[PASS] Python | Claude Fable 5.1 | Easy | Table IV(a) exact cell
+[PASS] Python | Claude Fable 5.1 | Medium | Table IV(a) exact cell
+[PASS] Python | Claude Fable 5.1 | Hard | Table IV(a) exact cell
+[PASS] Python | DeepSeek-V4.1 | Easy | Table IV(a) exact cell
+[PASS] Python | DeepSeek-V4.1 | Medium | Table IV(a) exact cell
+[PASS] Python | DeepSeek-V4.1 | Hard | Table IV(a) exact cell
+[PASS] Python | GPT-5.6 | Easy | Table IV(a) exact cell
+[PASS] Python | GPT-5.6 | Medium | Table IV(a) exact cell
+[PASS] Python | GPT-5.6 | Hard | Table IV(a) exact cell
+[PASS] Python | Gemini 3.8 | Easy | Table IV(a) exact cell
+[PASS] Python | Gemini 3.8 | Medium | Table IV(a) exact cell
+[PASS] Python | Gemini 3.8 | Hard | Table IV(a) exact cell
+[PASS] Python | Pynguin | Easy | Table IV(a) exact cell
+[PASS] Python | Pynguin | Medium | Table IV(a) exact cell
+[PASS] Python | Pynguin | Hard | Table IV(a) exact cell
+[PASS] Python | Qwen 3.8 | Easy | Table IV(a) exact cell
+[PASS] Python | Qwen 3.8 | Medium | Table IV(a) exact cell
+[PASS] Python | Qwen 3.8 | Hard | Table IV(a) exact cell
+[PASS] Java | Claude Fable 5.1 | Easy | Table IV(b) exact cell
+[PASS] Java | Claude Fable 5.1 | Medium | Table IV(b) exact cell
+[PASS] Java | Claude Fable 5.1 | Hard | Table IV(b) exact cell
+[PASS] Java | DeepSeek-V4.1 | Easy | Table IV(b) exact cell
+[PASS] Java | DeepSeek-V4.1 | Medium | Table IV(b) exact cell
+[PASS] Java | DeepSeek-V4.1 | Hard | Table IV(b) exact cell
+[PASS] Java | Gemini 3.8 | Easy | Table IV(b) exact cell
+[PASS] Java | Gemini 3.8 | Medium | Table IV(b) exact cell
+[PASS] Java | Gemini 3.8 | Hard | Table IV(b) exact cell
+[PASS] Java | GPT-5.6 | Easy | Table IV(b) exact cell
+[PASS] Java | GPT-5.6 | Medium | Table IV(b) exact cell
+[PASS] Java | GPT-5.6 | Hard | Table IV(b) exact cell
+[PASS] Java | Qwen 3.8 | Easy | Table IV(b) exact cell
+[PASS] Java | Qwen 3.8 | Medium | Table IV(b) exact cell
+[PASS] Java | Qwen 3.8 | Hard | Table IV(b) exact cell
+[PASS] Java | EvoSuite | Easy | Table IV(b) exact cell
+[PASS] Java | EvoSuite | Medium | Table IV(b) exact cell
+[PASS] Java | EvoSuite | Hard | Table IV(b) exact cell
+[PASS] Java | Gemini 3.8 | Hard | Supplementary Gemini Hard paragraph
+[PASS] Python | nan | nan | Q1 pooled mean and N
+[PASS] Python | nan | nan | Q2 pooled mean and N
+[PASS] Python | nan | nan | Q4 pooled mean and N
+[PASS] Python | nan | nan | Q5 pooled mean and N
+[PASS] Python | nan | nan | Q6 pooled mean and N
+[PASS] Python | nan | nan | Q7 pooled mean and N
+[PASS] Python | nan | nan | Q9 pooled mean and N
+[PASS] Python | nan | nan | Q10 pooled mean and N
+[PASS] Java | nan | nan | Q1 pooled mean and N
+[PASS] Java | nan | nan | Q2 pooled mean and N
+[PASS] Java | nan | nan | Q4 pooled mean and N
+[PASS] Java | nan | nan | Q5 pooled mean and N
+[PASS] Java | nan | nan | Q6 pooled mean and N
+[PASS] Java | nan | nan | Q7 pooled mean and N
+[PASS] Java | nan | nan | Q10 pooled mean and N
+[PASS] Python | nan | nan | Paired composite means and matched N
+[PASS] Java | nan | nan | Paired composite means and matched N
+[PASS] Python | nan | nan | Matched target blocks by difficulty
+[PASS] Java | nan | nan | Matched target blocks by difficulty
+
+INFERENTIAL TEST NOTE:
+Friedman chi-square, degrees of freedom, raw p-values, and Kendall's W are
+recalculated from the target-matched six-generator composite scores and checked
+against Table IV. Paired Wilcoxon tests compare the five-LLM target mean with
+the language-specific baseline. Holm-adjusted p-values are calculated across
+the four comparisons (Overall, Easy, Medium, Hard) separately within each
+language and checked against Table V. Raw Wilcoxon p-values and test statistics
+are retained in the output workbook as additional reproducibility details.
+
+INTERPRETATION:
+Python pass rate and Java measurement rate are distinct measures.
+N/A is excluded from applicable SQAI means and coverage N/A is not converted to zero.
+The Gemini Java Hard supplementary branch/combined values are checked to 2 decimals.
