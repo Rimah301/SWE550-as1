@@ -106,9 +106,6 @@ The scripts and configuration files document the experimental settings available
 
 Do not commit API keys, access tokens, or private credentials. Store credentials locally as environment variables or in a local `.env` file excluded from version control. The Pynguin workflow imports and executes source modules during generation; run it only on source code you trust and in an appropriately isolated environment.
 
-## Repository
-
-https://github.com/Rimah301/SWE550-as1
 
 ## License
 
